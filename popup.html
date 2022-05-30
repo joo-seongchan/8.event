@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+
+
+    <style>
+
+        .button{
+            cursor: pointer;
+        }
+        .popup{
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: red;
+            display: none;
+        }
+
+        .close{
+            font-size: 50px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .up{
+            display: block;
+        }
+
+        .close{
+            cursor: pointer;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    
+
+    <button>더보기</button>
+    <div class="popup">
+        <div class="close">X</div>
+    </div>
+
+
+    <script>
+
+        const button = document.querySelector('button')
+        const popup = document.querySelector('.popup')
+        const close = document.querySelector('.close')
+
+        button.addEventListener('click', () => popup.classList.add('up'))
+        close.addEventListener('click', () => popup.classList.remove('up'))
+
+    </script>
+
+
+
+
+
+</body>
+</html>
