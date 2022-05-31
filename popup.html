@@ -15,7 +15,11 @@
         .popup{
             width: 500px;
             height: 500px;
-            margin: 0 auto;
+            /* margin: 0 auto; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background-color: red;
             display: none;
         }
@@ -52,10 +56,10 @@
 
         const button = document.querySelector('button')
         const popup = document.querySelector('.popup')
-        const close = document.querySelector('.close')
+        const End = document.querySelector('.close')
 
         button.addEventListener('click', () => popup.classList.add('up'))
-        close.addEventListener('click', () => popup.classList.remove('up'))
+        End.addEventListener('click', () => popup.classList.remove('up'))
 
     </script>
 
